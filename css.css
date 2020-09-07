@@ -1,0 +1,489 @@
+    .btn {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    /* button 1 */
+    
+    .btn-hover {
+        padding: 2px;
+        width: 170px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        background: orange;
+        position: relative;
+        line-height: 46px;
+        color: white;
+        margin-left: 100px;
+    }
+    
+    .btn .btn__hoverme {
+        margin-right: 15%;
+    }
+    
+    .btn .btn__item {
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+    }
+    /* btn--1 */
+    
+    .btn-hover:hover .btn__item--1 {
+        width: 166px;
+        height: 45px;
+        border-radius: 50px;
+        transition: width 0.5s;
+    }
+    
+    .btn-hover:hover .btn__item--1 i {
+        margin-right: 130px;
+        transition: margin-right 0.5s;
+    }
+    
+    .btn-hover:hover .btn__hoverme--1 {
+        margin-left: 40px;
+        transition: margin-left 0.5s;
+    }
+    /* btn--2 */
+    
+    .btn-hover:hover .btn__item--2 {
+        background: transparent;
+        transition: background 0.5s;
+    }
+    
+    .btn-hover:hover .btn__item--2 i {
+        margin-left: 20px;
+        transition: margin 0.5s;
+    }
+    /* btn--3 */
+    
+    .btn-hover:hover i {
+        margin-left: 10px;
+        transition: margin-left 0.5s;
+    }
+    
+    .btn-hover:hover .btn__item--3 {
+        margin-right: 180px;
+        transition: margin-right 0.5s;
+    }
+    /* button 2 */
+    
+    .btn-3d {
+        border: none;
+        background: transparent;
+        position: relative;
+    }
+    
+    .btn__fabulous1 {
+        line-height: 46px;
+        position: absolute;
+        width: 160px;
+        height: 50px;
+        background: red;
+        color: white;
+        border-radius: 10px;
+        border-bottom: 5px rgb(97, 2, 2) solid;
+    }
+    
+    @keyframes move_top {
+        from {
+            top: 0px;
+        }
+        to {
+            top: 10px;
+        }
+    }
+    
+    .btn-3d:active .btn__fabulous1 {
+        animation: move_top 0.5s;
+    }
+    /* button 3 */
+    
+    .btn-big {
+        width: 170px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        background: navy;
+        line-height: 46px;
+        margin-top: 50px;
+        color: white;
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+    
+    .btn-big:hover {
+        transform: scale(1.3);
+        transition: transform 0.5s;
+    }
+    /* button 4 */
+    
+    .btn-rectangle {
+        width: 250px;
+        height: 50px;
+        border: none;
+        color: white;
+        position: relative;
+    }
+    
+    .btn-rectangle .btn__rectangle {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: rgb(241, 231, 231, 0.3);
+        width: 60px;
+        line-height: 50px;
+        height: 50px;
+    }
+    
+    .btn-rectangle .btn__text {
+        margin-right: 20%;
+    }
+    /* search */
+    
+    .btn-search {
+        background: rgb(55, 55, 241);
+    }
+    
+    .btn-search:hover .btn__rectangle i {
+        transform: scale(1.5);
+        transition: transform 0.5s;
+    }
+    
+    .btn-search:hover {
+        background: rgb(24, 24, 182);
+        transition: background 0.5s;
+    }
+    /* btn--readmore */
+    
+    .btn-readmore {
+        background: tomato;
+    }
+    
+    .btn-readmore:hover {
+        background: red;
+        transition: background 0.5s;
+    }
+    
+    @keyframes readmore {
+        from {
+            top: 0px;
+        }
+        to {
+            margin-left: 20px;
+        }
+    }
+    
+    .btn-readmore:hover .btn__rectangle i {
+        animation: readmore 0.5s infinite;
+    }
+    /* btn--mail */
+    
+    .btn-mail {
+        background: plum;
+    }
+    
+    .btn-mail:hover {
+        background: purple;
+        transition: background 0.5s;
+    }
+    
+    .btn-mail:hover .btn__rectangle i {
+        transform: skewX(-30deg);
+    }
+    /* btn--phone */
+    
+    .btn-phone {
+        background: rgb(29, 134, 29);
+    }
+    
+    .btn-phone:hover {
+        background: rgb(6, 82, 6);
+        transition: background 0.5s;
+    }
+    
+    @keyframes phone {
+        from {
+            top: 0px;
+        }
+        to {
+            transform: rotate(15deg);
+            transform-origin: bottom right;
+        }
+    }
+    
+    .btn-phone:hover .btn__rectangle i {
+        animation: phone 0.2s infinite;
+    }
+    /* button 5 */
+    
+    .btn-learnmore {
+        width: 180px;
+        height: 50px;
+        background: transparent;
+        border: 0px;
+        position: relative;
+    }
+    
+    .btn__learnmore1,
+    .btn__learnmore3 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        color: white;
+        background: rgb(95, 94, 95);
+    }
+    
+    .btn__learnmore3 {
+        display: none;
+    }
+    
+    .btn__learnmore2 {
+        margin-left: 25%;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .btn-learnmore:hover .btn__learnmore1 {
+        width: 180px;
+        height: 50px;
+        border-radius: 50px;
+        transition: width 1s;
+    }
+    
+    .btn-learnmore:hover .btn__learnmore1 i {
+        display: none;
+        transition: display 0.5s;
+    }
+    
+    .btn-learnmore:hover .btn__learnmore2 {
+        color: white;
+        transition: color 0.5s;
+    }
+    
+    .btn-learnmore:hover .btn__learnmore3 {
+        display: block;
+    }
+    
+    .btn-learnmore:hover .btn__learnmore3 i {
+        margin-left: 20px;
+        transition: margin-left 1s;
+    }
+    /* button 6 */
+    
+    .btn-letsgo {
+        width: 180px;
+        height: 50px;
+        background: transparent;
+        border: 2px rgb(90, 89, 89) solid;
+        position: relative;
+        /*   chú ý */
+        overflow: hidden;
+    }
+    /* btn__icon1 */
+    
+    .btn__icon1 {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        display: none;
+    }
+    
+    @keyframes planetelegram_plane {
+        from {
+            right: 5px;
+        }
+        to {
+            right: 20px;
+        }
+    }
+    
+    .btn-letsgo:hover .btn__icon1 {
+        display: block;
+        animation: planetelegram_plane 0.5s;
+        transition: animation 0.5s;
+    }
+    /* btn__icon2 */
+    
+    .btn-letsgo .btn__icon2 {
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        width: 0px;
+        transition: width 0.5s;
+        height: 48px;
+        background-color: rgb(90, 89, 89);
+        z-index: -10;
+    }
+    
+    .btn-letsgo:hover .btn__letsgo2 {
+        color: white;
+    }
+    
+    .btn-letsgo:hover .btn__icon2 {
+        width: 178px;
+        transition: width 0.5s;
+    }
+    /* btn__icon3 */
+    
+    .btn-letsgo .btn__icon3 {
+        position: absolute;
+        top: 44px;
+        left: 0px;
+        width: 0px;
+        height: 2px;
+        background-color: rgb(90, 89, 89);
+    }
+    
+    .btn-letsgo:hover .btn__icon3 {
+        width: 178px;
+        transition: display 0.5s;
+        transition: width 0.5s;
+    }
+    /* btn__icon4 */
+    
+    .btn-letsgo:hover .btn__letsgo4 {
+        color: white;
+    }
+    
+    .btn-letsgo .btn__icon4 {
+        position: absolute;
+        top: 0px;
+        left: -100px;
+        width: 0px;
+        height: 48px;
+        background-color: rgb(90, 89, 89);
+        z-index: -10;
+        transform: skewX(50deg);
+        transition: width 0.5s, left 0.5s, skewX 0.5s;
+    }
+    
+    .btn-letsgo:hover .btn__icon4 {
+        width: 120px;
+        left: 29px;
+        transform: skewX(50deg);
+        transition: width 0.5s, left 0.5s, skewX 0.5s;
+    }
+    /*  btn__icon5 */
+    
+    .btn-letsgo:hover .btn__letsgo5 {
+        color: white;
+    }
+    
+    .btn-letsgo .btn__icon5 {
+        position: absolute;
+        top: 14px;
+        left: 40%;
+        width: 30px;
+        height: 15px;
+        border-radius: 50%;
+        z-index: -10;
+        transform: scale(0);
+        transition: transform 0.5s;
+        background-color: rgb(90, 89, 89);
+    }
+    
+    .btn-letsgo:hover .btn__icon5 {
+        width: 30px;
+        height: 15px;
+        border-radius: 50%;
+        transform: scale(10);
+        transition: transform 1.0s;
+    }
+    /* button 7 */
+    
+    .btn-pseudo_element {
+        width: 140px;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        background: rgb(168, 4, 4);
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-pseudo_element .btn__pseudo_element2 {
+        position: absolute;
+        top: 0px;
+        left: -60px;
+        width: 40px;
+        height: 55px;
+        background: white;
+        transform: skewX(-30deg);
+    }
+    
+    .btn-pseudo_element:hover .btn__pseudo_element2 {
+        left: 160px;
+        transition: left 0.5s;
+    }
+    /* button 8 */
+    /* bnt1 */
+    
+    .btn-neon {
+        width: 140px;
+        height: 60px;
+        border: 2px rgb(4, 97, 235) solid;
+        background: transparent;
+        color: rgb(4, 97, 235);
+        border-radius: 50px;
+    }
+    
+    .btn-neon:hover {
+        box-shadow: 0 -0.1px 10px rgb(4, 97, 235), 0 7px 80px rgb(4, 97, 235);
+    }
+    /* btn2 */
+    
+    .btn-angle_bg {
+        width: 170px;
+        height: 60px;
+        border: 2px rebeccapurple solid;
+        background: transparent;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-angle_bg .btn__angle_bg2 {
+        position: absolute;
+        top: 0px;
+        left: -35px;
+        width: 240px;
+        height: 58px;
+        transition: left 0.5s;
+        background: rebeccapurple;
+        transform: skewX(50deg);
+        z-index: -10;
+    }
+    
+    .btn-angle_bg:hover .btn__angle_bg1 {
+        color: rebeccapurple;
+    }
+    
+    .btn-angle_bg:hover .btn__angle_bg2 {
+        left: -275px;
+        transition: left 0.5s;
+    }
+    /* a {
+        
+    vertical-align: middle;
+    display: inline-block;
+}
+
+row--gap {
+    margin: 0 -15px;
+}
+
+col--gap {
+    margin: 0 15px;
+} */
